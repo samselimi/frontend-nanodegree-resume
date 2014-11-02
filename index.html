@@ -45,7 +45,6 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 </head>
 <body unresolved>
   <div id="main">
-  Hello world!   <!-- You'll be deleting this line in the course -->
 
     <!--
     Everything from here to the <script> tag below is the skeleton of your
@@ -109,6 +108,22 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       an opening and closing set of slash asterisks for block comments.
   */
 
+var name = "Sam Selimovski";
+var formattedName = 
+  HTMLheaderName.replace("%data%", name);
+
+var role = "Web Developer";
+var formattedRole = 
+  HTMLheaderRole.replace("%data%", role);
+
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+
+var skills = 
+["awesomeness","programming","teaching","JS"];
+
+$("#main").append(skills.length);
+$("#main").append(skills);
 
   if(document.getElementsByClassName("flex-item").length === 0) {
     document.getElementById("topContacts").style.display = "none";
