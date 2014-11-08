@@ -122,8 +122,9 @@ $("#header").prepend(formattedName);
 var skills = 
 ["awesomeness","programming","teaching","JS"];
 
-$("#main").append(skills.length);
-$("#main").append(skills);
+$("#main").append(bio.thatname);
+$("#main").append(bio.school);
+$("#main").append(bio["location"]);
 
   if(document.getElementsByClassName("flex-item").length === 0) {
     document.getElementById("topContacts").style.display = "none";
