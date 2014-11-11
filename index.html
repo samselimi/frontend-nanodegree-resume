@@ -39,7 +39,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   Uncomment the <script> tag below when you're ready to add an interactive
   Google Map to your resume!
   -->
-  <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
   <meta name="viewport" content="width=device-width">
 </head>
@@ -107,24 +107,11 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   /*
       an opening and closing set of slash asterisks for block comments.
   */
-
-var name = "Sam Selimovski";
-var formattedName = 
-  HTMLheaderName.replace("%data%", name);
-
-var role = "Web Developer";
-var formattedRole = 
-  HTMLheaderRole.replace("%data%", role);
-
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-
-var skills = 
-["awesomeness","programming","teaching","JS"];
-
-$("#main").append(bio.thatname);
-$("#main").append(bio.school);
-$("#main").append(bio["location"]);
+// my.display = function() {
+// for (var i = 0, i < 9, i++){
+//   console.log(i);
+// };
+// my.display();
 
   if(document.getElementsByClassName("flex-item").length === 0) {
     document.getElementById("topContacts").style.display = "none";
@@ -132,7 +119,7 @@ $("#main").append(bio["location"]);
   if(document.getElementsByTagName("h1").length === 0) {
     document.getElementById("header").style.display = "none";
   }
-  if(document.getElementsByClassName("work-entry").length === 0) {
+  if(document.getElementsByClassName("work").length === 1) {
     document.getElementById("workExperience").style.display = "none";
   }
   if(document.getElementsByClassName("project-entry").length === 0) {
